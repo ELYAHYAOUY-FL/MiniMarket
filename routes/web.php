@@ -17,6 +17,7 @@ Route::get('/categories',[StaticController::class , 'categories']);
 Route::get('/login',[StaticController::class , 'login']);
 Route::get('/redirects',[StaticController::class , 'redirects']);
 Route::get('/admin',[StaticController::class , 'admin']);
+Route::get('/user',[StaticController::class , 'user']);
 
 Route::get('/', function () {
     return view('main');
@@ -28,9 +29,9 @@ Route::group(['middleware' => ['auth','isAdmin']], function () {
     //    return "this is adimn";
     });
  });
-Route::group(['middleware' => ['auth','isAdmin']], function () {
+Route::group(['middleware' => ['auth','isUser']], function () {
     Route::get('/dashboard', function () {
-      return view('admin');
+      return view('user');
     //    return "this is adimn";
     });
  });
