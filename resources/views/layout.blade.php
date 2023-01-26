@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Furnishings @yield('title')</title>
+    <link rel="website icon" type="png" href="images/cap1.png">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -34,7 +35,7 @@
 <div class="icons">
     <a href="#" class="fas fa-heart"></a>
     <a href="#" class="fas fa-shopping-cart"></a>
-    <a href="#" class="fas fa-user"></a>
+    <a href="/login" class="fas fa-user"></a>
 </div>
 
 </header>
