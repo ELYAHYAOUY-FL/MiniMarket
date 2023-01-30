@@ -23,4 +23,11 @@ class StaticController extends Controller
     public function tableschairs(){
         return view('layouts.tables&chairs');
     }
+    public function login(){
+        return view('login'); 
+    }
+    public function admin(){
+        return view('admin'); 
+    }
+    
 }

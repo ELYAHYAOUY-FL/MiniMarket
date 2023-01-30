@@ -25,6 +25,7 @@ section{
     padding:2rem 9%;
 }
 
+
 /* .heading{
     text-align: center;
     font-size: 4rem;
@@ -83,6 +84,9 @@ header .navbar a{
 
 header .navbar a:hover{
     color:var(--yallow);
+}
+header .icons{
+    display: flex;
 }
 
 header .icons a{
